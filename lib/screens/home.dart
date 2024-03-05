@@ -14,26 +14,19 @@ class HomeView extends StatelessWidget {
         ],
       ),
       body: GridView.count(
+        shrinkWrap: true,
         crossAxisCount: 2,
         crossAxisSpacing: 10.0,
-        children: List.generate(20, (index) {
-          return Padding(padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage('images/ecommerce.jpg'),
-                    fit: BoxFit.cover,
-                  ),
-                  borderRadius: BorderRadius.all(Radius.circular(20.0),),
-                ),
-              ),
-            ],
-          ),
-          );
-        },),
-      ),
+        childAspectRatio: 0.9,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(8),
+            child: const Image(image: AssetImage('images/shoes.jpeg'),
+              height: 100,
+            ),
+          )
+        ]
+        ),
     );
   }
 }
