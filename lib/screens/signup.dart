@@ -2,10 +2,10 @@ import 'package:e_commerce/widgets/editText.dart';
 import 'package:flutter/material.dart';
 
 class SignUpView extends StatelessWidget {
-   SignUpView({super.key});
-  final nameController = TextEditingController();
-  final passController = TextEditingController();
-  final helloController = TextEditingController();
+  const SignUpView({super.key});
+  // final nameController = TextEditingController();
+  // final passController = TextEditingController();
+  // final helloController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +23,11 @@ class SignUpView extends StatelessWidget {
               ),
               ),
               SizedBox(height: 40),
-              EditTextview(controller: nameController, hintText: "Name", obscureText: false),
-              EditTextview(controller: passController, hintText: "Password", obscureText: true),
+              EditTextview(),
+              SizedBox(height: 20),
+              EditTextview(),
             ],
+
           ),
         ),
       ),

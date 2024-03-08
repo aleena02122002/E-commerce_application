@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 class LoginView extends StatelessWidget {
   LoginView({Key? key});
 
-  final passwordController = TextEditingController();
-  final usernameController = TextEditingController();
+  //final passwordController = TextEditingController();
+  //final usernameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,9 @@ class LoginView extends StatelessWidget {
 
               Text("LOGIN PAGE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,)),
               SizedBox(height: 20),
-              //EditTextview(controller: usernameController, hintText: "UserName", obscureText: false),
+              EditTextview(),
               SizedBox(height: 20),
-              //EditTextview(controller: passwordController, hintText: "Password", obscureText: true),
+              EditTextview(),
             ],
           ),
         ),
