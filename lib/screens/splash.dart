@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:e_commerce/screens/home.dart';
 import 'package:e_commerce/screens/login.dart';
+import 'package:e_commerce/screens/signup.dart';
 import 'package:flutter/material.dart';
 
 class SplashView extends StatefulWidget {
@@ -15,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState(){
     super.initState();
-    Timer(Duration(seconds: 4),()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> loginView() ),)
+    Timer(Duration(seconds: 4),()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> SignUpView() ),)
     );
   }
   @override

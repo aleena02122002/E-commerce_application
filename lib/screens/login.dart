@@ -1,10 +1,11 @@
-
 import 'package:e_commerce/widgets/editText.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class loginView extends StatelessWidget {
-  const loginView({super.key});
+class LoginView extends StatelessWidget {
+  LoginView({Key? key});
+
+  final passwordController = TextEditingController();
+  final usernameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +14,17 @@ class loginView extends StatelessWidget {
       body: const SafeArea(
         child: Center(
           child: Column(
-            children:[
+            children: [
               SizedBox(height: 50),
               Icon(Icons.shopping_cart, size: 100,),
               SizedBox(height: 30),
 
-             Text("LOGIN PAGE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,)),
-             SizedBox(height: 20),
-              EditTextview(),
-              ],
+              Text("LOGIN PAGE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,)),
+              SizedBox(height: 20),
+              //EditTextview(controller: usernameController, hintText: "UserName", obscureText: false),
+              SizedBox(height: 20),
+              //EditTextview(controller: passwordController, hintText: "Password", obscureText: true),
+            ],
           ),
         ),
       ),
