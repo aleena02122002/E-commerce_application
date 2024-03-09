@@ -26,6 +26,8 @@ class SignUpView extends StatelessWidget {
               EditTextview(),
               SizedBox(height: 20),
               EditTextview(),
+
+              SizedBox(height: 30,)
             ],
 
           ),
